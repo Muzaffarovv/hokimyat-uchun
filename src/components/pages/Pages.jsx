@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../common/header/Header'
-import { BrowserRouter as Router, Switch,} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Home from "../home/Home"
 
 const Pages = () => {
     return (
@@ -8,13 +9,10 @@ const Pages = () => {
         <Router>
         <Header />
         <Switch>
-            {/*<Route path='/about'>
-                <About />
-                </Route>*/}
+            <Route exact path='/' component={Home} />
         </Switch>
     </Router>
         </>
     ) 
 }
-
-export default Pages
+export default Pages 

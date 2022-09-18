@@ -2,28 +2,36 @@ header {
     background-color: #283b60;
     height: 14vh;
     box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-     padding: 15px 0; 
     position: sticky;
     top: 0;
     z-index: 99999;
+  
 }
 
 header img {
-    width: 100px;
+    width: 90px;
+    height: 90px;
+    margin-left: 50px;
+    margin-top: 8px;
 }
 
 header a {
     margin-left: 40px;
     transition: 0.5s;
-    font-weight: 500;
+    font-size: small;
+
 }
 
 header a:hover {
-    color: cornflowerblue;
+    color: #5880d1;
 }
 
 header .toggle {
     display: none;
+}
+
+.btn1{
+    margin-right: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -48,7 +56,7 @@ header .toggle {
         top: 11vh;
         left: 0;
         width: 100%;
-        background-color: #283b60;
+        background-color: #5880d1;
         padding: 25px;
     }
     header li a {
